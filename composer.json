@@ -2,6 +2,8 @@
     "name": "tamnnit/onepay",
     "description": "payment client onepay",
     "type": "library",
+    "homepage": "https://github.com/tamnnit1/onepay",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nguyen Nhat Tam",
