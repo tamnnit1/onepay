@@ -1,0 +1,40 @@
+{
+    "name": "tamnnit/onepay",
+    "description": "payment client onepay",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nguyen Nhat Tam",
+            "email": "ntam444@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "omnipay/common": "^3.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3.0",
+        "scrutinizer/ocular": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\OnePay\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnipay\\OnePay\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "\"vendor/bin/phpunit\""
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+	}
+}
