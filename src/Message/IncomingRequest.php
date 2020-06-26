@@ -1,9 +1,4 @@
 <?php
-/**
- * *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message;
 
@@ -50,7 +45,7 @@ class IncomingRequest extends AbstractRequest
     }
 
     /**
-     * Trả về danh sách parameters từ OnePay gửi sang.
+     * return list parameters.
      *
      * @return array
      */

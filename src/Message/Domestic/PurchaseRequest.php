@@ -1,10 +1,4 @@
 <?php
-/**
- * *
- *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message\Domestic;
 

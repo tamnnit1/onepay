@@ -1,10 +1,4 @@
 <?php
-/**
- * *
- *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message;
 
@@ -26,7 +20,7 @@ class AbstractQueryTransactionRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về mã đơn hàng cần truy vấn giao dịch.
+     * return order code.
      *
      * @return null|string
      */
@@ -36,7 +30,7 @@ class AbstractQueryTransactionRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập mã đơn hàng cần truy vấn giao dịch tại hệ thống của bạn.
+     * set order code.
      *
      * @param  null|string  $ref
      * @return $this

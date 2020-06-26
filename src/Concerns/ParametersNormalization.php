@@ -1,10 +1,4 @@
 <?php
-/**
- * *
- *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Concerns;
 
@@ -15,7 +9,7 @@ namespace Omnipay\OnePay\Concerns;
 trait ParametersNormalization
 {
     /**
-     * Phương thức hổ trợ xóa bỏ các ký tự `_` khi thiết lập các parameters.
+     * removing the `_` characters when setting parameters.
      *
      * @param  array  $parameters
      * @return array

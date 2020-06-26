@@ -1,9 +1,4 @@
 <?php
-/**
- * *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message\Concerns;
 
@@ -24,7 +19,7 @@ trait RequestEndpoint
     protected $testEndpoint;
 
     /**
-     * Trả về url kết nối OnePay.
+     * return url connect OnePay.
      *
      * @return string
      */

@@ -1,9 +1,4 @@
 <?php
-/**
- * *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message\Concerns;
 
@@ -16,7 +11,7 @@ use Omnipay\OnePay\Support\Signature;
 trait RequestSignature
 {
     /**
-     * Trả về chữ ký điện tử gửi đến OnePay dựa theo [[getSignatureParameters()]].
+     * return Electronic Signature [[getSignatureParameters()]].
      *
      * @return string
      */
@@ -35,7 +30,7 @@ trait RequestSignature
     }
 
     /**
-     * Trả về danh sách parameters dùng để tạo chữ ký số.
+     * return list parameters use to create digital signatures.
      *
      * @return array
      */

@@ -1,10 +1,4 @@
 <?php
-/**
- * *
- *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message;
 
@@ -23,7 +17,7 @@ class PurchaseResponse extends Response implements RedirectResponseInterface
     private $redirectUrl;
 
     /**
-     * Khởi tạo đối tượng PurchaseResponse.
+     * create object PurchaseResponse.
      *
      * @param  \Omnipay\Common\Message\RequestInterface  $request
      * @param $data

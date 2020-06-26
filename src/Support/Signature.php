@@ -1,9 +1,4 @@
 <?php
-/**
- * *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Support;
 
@@ -14,14 +9,14 @@ namespace Omnipay\OnePay\Support;
 class Signature
 {
     /**
-     * Khóa bí mật dùng để tạo và kiểm tra chữ ký dữ liệu.
+     * secret key for creating and checking data signatures.
      *
      * @var string
      */
     protected $hashKey;
 
     /**
-     * Khởi tạo đối tượng DataSignature.
+     * create object dataSignature.
      *
      * @param  string  $hashKey
      */
@@ -31,7 +26,7 @@ class Signature
     }
 
     /**
-     * Trả về chữ ký dữ liệu của dữ liệu truyền vào.
+     * return data signature of transmitted data.
      *
      * @param  array  $data
      * @return string
@@ -45,7 +40,7 @@ class Signature
     }
 
     /**
-     * Kiểm tra tính hợp lệ của chữ ký dữ liệu so với dữ liệu truyền vào.
+     * Check the validity of the data signature against the transmitted data.
      *
      * @param  array  $data
      * @param  string  $expect

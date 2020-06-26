@@ -1,9 +1,4 @@
 <?php
-/**
- * *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message\Concerns;
 
@@ -17,7 +12,7 @@ use Omnipay\Common\Exception\InvalidResponseException;
 trait ResponseSignatureValidation
 {
     /**
-     * Kiểm tra tính hợp lệ của dữ liệu do OnePay phản hồi.
+     * Check the validity of the data returned by OnePay
      *
      * @throws InvalidResponseException
      */

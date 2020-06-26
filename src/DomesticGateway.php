@@ -1,10 +1,4 @@
 <?php
-/**
- * @link https://github.com/phpviet/laravel-onepay
- *
- * 
- * 
- */
 
 namespace Omnipay\OnePay;
 

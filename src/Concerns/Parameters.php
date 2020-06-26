@@ -1,8 +1,4 @@
 <?php
-/**
- *
- * 
- */
 
 namespace Omnipay\OnePay\Concerns;
 
@@ -13,7 +9,7 @@ namespace Omnipay\OnePay\Concerns;
 trait Parameters
 {
     /**
-     * Trả về giá trị merchant id do OnePay cấp.
+     * get merchant id.
      *
      * @return null|string
      */
@@ -23,7 +19,7 @@ trait Parameters
     }
 
     /**
-     * Thiết lập giá trị merchant id.
+     * set merchant id.
      *
      * @param  null|string  $merchant
      * @return $this
@@ -34,7 +30,7 @@ trait Parameters
     }
 
     /**
-     * Trả về giá trị access code do OnePay cấp.
+     * get access code.
      *
      * @return null|string
      */
@@ -44,7 +40,7 @@ trait Parameters
     }
 
     /**
-     * Thiết lập giá trị access code.
+     * set access code.
      *
      * @param  null|string  $code
      * @return $this
@@ -55,7 +51,7 @@ trait Parameters
     }
 
     /**
-     * Trả về giá trị hash key do OnePay cấp.
+     * get hash key.
      *
      * @return null|string
      */
@@ -65,7 +61,7 @@ trait Parameters
     }
 
     /**
-     * Thiết lập giá trị hash key dùng để tạo chữ ký dữ liệu (secure hash).
+     * set hash key (secure hash).
      *
      * @param  null|string  $key
      * @return $this
@@ -76,7 +72,7 @@ trait Parameters
     }
 
     /**
-     * Trả về giá trị user do OnePay cấp.
+     * get user.
      *
      * @return null|string
      */
@@ -86,7 +82,7 @@ trait Parameters
     }
 
     /**
-     * Thiết lập giá trị user.
+     * set user.
      *
      * @param  null|string  $user
      * @return $this
@@ -97,7 +93,7 @@ trait Parameters
     }
 
     /**
-     * Trả về giá trị password do OnePay cấp.
+     * get password.
      *
      * @return null|string
      */
@@ -107,7 +103,7 @@ trait Parameters
     }
 
     /**
-     * Thiết lập giá trị password.
+     * set password.
      *
      * @param  null|string  $password
      * @return $this
@@ -118,7 +114,7 @@ trait Parameters
     }
 
     /**
-     * Trả về giá trị version hiện tại.
+     * get version.
      *
      * @return null|string
      */
@@ -128,7 +124,7 @@ trait Parameters
     }
 
     /**
-     * Thiết lập giá trị version muốn sử dụng.
+     * set version.
      *
      * @param  null|string  $version
      * @return $this

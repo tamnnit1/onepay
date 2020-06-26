@@ -1,10 +1,4 @@
 <?php
-/**
- * *
- *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message;
 
@@ -19,7 +13,7 @@ class IncomingResponse extends Response
     use Concerns\ResponseSignatureValidation;
 
     /**
-     * Khởi tạo đối tượng Response.
+     * create object Response.
      *
      * @param  \Omnipay\Common\Message\RequestInterface  $request
      * @param $data

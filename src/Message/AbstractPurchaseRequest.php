@@ -1,10 +1,4 @@
 <?php
-/**
- * *
- *
- * 
- * 
- */
 
 namespace Omnipay\OnePay\Message;
 
@@ -65,7 +59,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả giao diện ngôn ngữ khách dùng để thanh toán.
+     * get locale.
      *
      * @return null|string
      */
@@ -75,7 +69,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập giao diện ngôn ngữ khách dùng để thanh toán.
+     * set locale.
      *
      * @param  null|string  $locale
      * @return $this
@@ -86,8 +80,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về đường dẫn thanh toán tại hệ thống của bạn mà khách đã dùng để thanh toán.
-     * Nếu không thiết lập hệ thống sẽ tự động lấy đường dẫn của khách truy vấn hệ thống hiện tại, đối với CLI mode sẽ là empty.
+     * link the payment page of the website before switch to OnePAY
      *
      * @return null|string
      */
@@ -97,7 +90,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập đường dẫn thanh toán tại hệ thống của bạn mà khách đã dùng để thanh toán.
+     * set link the payment page of the website before switch to OnePAY
      *
      * @param  null|string  $link
      * @return $this
@@ -108,7 +101,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về tiêu đề hiển thị tại OnePay khi thanh toán.
+     * return the title displays at OnePay at checkout.
      *
      * @return null|string
      */
@@ -118,7 +111,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập tiêu đề hiển thị tại OnePay khi thanh toán.
+     * set the title displays at OnePay at checkout.
      *
      * @param  null|string  $title
      * @return $this
@@ -129,7 +122,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Phương thức ánh xạ của [[getClientIp()]].
+     * The mapping method of [[getClientIp()]].
      *
      * @return null|string
      * @see getClientIp
@@ -140,7 +133,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Phương thức ánh xạ của [[setClientIp()]].
+     * The mapping method of [[setClientIp()]].
      *
      * @param  null|string  $ticketNo
      * @return $this
@@ -168,7 +161,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Phương thức ánh xạ của [[getAmount()]].
+     * The mapping method of [[getAmount()]].
      *
      * @return null|string
      * @see getAmount
@@ -179,7 +172,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Phương thức ánh xạ của [[setAmount()]].
+     * The mapping method of [[setAmount()]].
      *
      * @param  null|string  $amount
      * @return $this
@@ -207,7 +200,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về thông tin đơn hàng.
+     * return order info.
      *
      * @return null|string
      */
@@ -217,7 +210,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập thông tin đơn hàng.
+     * set order info.
      *
      * @param  null|string  $info
      * @return $this
@@ -228,7 +221,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về mã đơn hàng cần thanh toán.
+     * return order code.
      *
      * @return null|string
      */
@@ -238,7 +231,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập mã đơn hàng cần thanh toán tại hệ thống của bạn.
+     * set order code.
      *
      * @param  null|string  $ref
      * @return $this
@@ -249,7 +242,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về đơn vị tiền tệ sử dụng thanh toán của khách.
+     * return currency.
      *
      * @return null|string
      */
@@ -259,7 +252,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập đơn vị tiền tệ sử dụng thanh toán của khách.
+     * set currency.
      *
      * @param  null|string  $currency
      * @return $this
@@ -286,7 +279,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về số điện thoại khách hàng.
+     * return phone of customer.
      *
      * @return null|string
      */
@@ -296,7 +289,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập số điện thoại khách hàng.
+     * set phone of customer.
      *
      * @param  null|string  $phone
      * @return $this
@@ -307,7 +300,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về id khách hàng.
+     * return id customer.
      *
      * @return null|string
      */
@@ -317,7 +310,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập id khách hàng.
+     * set id customer.
      *
      * @param  null|string  $id
      * @return $this
@@ -328,8 +321,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Phương thức ánh xạ của [[getReturnUrl()]].
-     * Trả về đường dẫn tại hệ thống của bạn sẽ redirect khách về sau khi thanh toán.
+     * The mapping method of [[getReturnUrl()]].
      *
      * @return null|string
      * @see getReturnUrl
@@ -340,7 +332,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Phương thức ánh xạ của [[setReturnUrl()]].
+     * The mapping method of [[setReturnUrl()]].
      *
      * @param  null|string  $url
      * @return $this
@@ -368,7 +360,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Trả về email khách hàng.
+     * return email customer.
      *
      * @return null|string
      */
@@ -378,7 +370,7 @@ abstract class AbstractPurchaseRequest extends AbstractSignatureRequest
     }
 
     /**
-     * Thiết lập email khách hàng.
+     * set email customer.
      *
      * @param  null|string  $email
      * @return $this
